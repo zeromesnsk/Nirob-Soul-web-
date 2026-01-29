@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nirob Soul</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Nirob Soul</div>
+    <button id="admin-btn">Admin Login</button>
+  </nav>
+  <header>
+    <h1>Nirob Soul</h1>
+    <p>Where Emotions Speak Louder Than Words</p>
+  </header>
+  <section id="posts">
+    <h2 class="section-title">Latest Posts</h2>
+    <div id="admin-post-form" style="display:none;">
+      <textarea id="post-text" placeholder="Write your emotional text... (optional)"></textarea>
+      <input type="text" id="post-video" placeholder="FB / YouTube Video Link (optional)">
+      <button type="button" id="post-submit">Post</button>
+    </div>
+    <div id="posts-container"></div>
+  </section>
+  <footer>© 2026 Nirob Soul • All Rights Reserved</footer>
+  <div id="admin-modal">
+    <div class="modal-content">
+      <h2>Admin Login</h2>
+      <input type="password" id="admin-pass" placeholder="Password">
+      <div class="modal-actions">
+        <button id="submit-btn">Login</button>
+        <button id="cancel-btn">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
